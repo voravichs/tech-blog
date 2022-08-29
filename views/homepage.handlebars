@@ -1,11 +1,17 @@
-{{#each projects as |project| }}
+{{#each blogs as |blog| }}
 <div class="border-4 border-emerald-600 rounded mb-8">
-  <a href="/project/{{project.id}}" class="bg-emerald-600 flex justify-between p-4 px-8 text-yellow-100">
-    <p class="font-semibold text-2xl">{{project.name}}</p>
-    <p class="font-light">Created by {{project.user.name}} on {{format_date project.date_created}}</p>
+  <a href="/blog/{{blog.id}}" class="bg-emerald-600 flex justify-between p-4 px-8 text-yellow-100">
+    <p class="font-semibold text-2xl">{{blog.name}}</p>
+    <p class="font-light">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
   </a>
   <div class="p-4 pl-8 text-emerald-900 text-xl">
-      {{project.description}}
-  </div>  
+    {{blog.description}}
+  </div>
 </div>
 {{/each}}
+<div class="flex justify-center">
+  <button
+    class="fixed bottom-8 right-12 rounded-full bg-yellow-100 text-4xl text-emerald-600 font-extrabold drop-shadow-xl p-4 border-2 border-emerald-500">
+    + New Post
+  </button>
+</div>

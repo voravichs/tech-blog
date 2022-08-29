@@ -1,4 +1,7 @@
 {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
     "root": true,
     "env": {
       "browser": true,
@@ -7,6 +10,7 @@
       "es6": true
     },
     "rules": {
+      "prefer-arrow-callback": "error",
       "no-duplicate-case": "error",
       "no-empty": "error",
       "no-extra-semi": "error",
@@ -27,7 +31,6 @@
       "no-redeclare": "error",
       "brace-style": "error",
       "indent": ["error", 2],
-      "linebreak-style": ["error", "unix"],
       "quotes": ["error", "double"],
       "semi": ["error", "always"],
       "radix": "off"
