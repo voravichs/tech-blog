@@ -17,16 +17,22 @@
     <header class="bg-emerald-600 px-16 py-8 mb-12">
       <nav class="pb-8 flex justify-evenly text-3xl text-yellow-100">
         <!-- Conditionally render login or logout links -->
-        <a href="/" class="hover:font-bold"> Home </a>
-        <a href="/profile" class="hover:font-bold"> Dashboard </a>
+        <a href="/" class="hover:font-bold transition-all"> Home </a>
+        <a href="/dashboard" class="hover:font-bold transition-all"> Dashboard </a>
         {{#if logged_in}}
-        <button class="hover:font-bold" id="logout">Logout</button>
+        <button class="hover:font-bold transition-all" id="logout">Logout</button>
         {{else}}
-        <a class="hover:font-bold" href="/login">Login</a>
+        <a class="hover:font-bold transition-all" href="/login">Login</a>
         {{/if}}
       </nav>
       <div class="flex justify-center">
-         <p class="rounded-lg bg-yellow-100 text-5xl text-emerald-700 font-extrabold drop-shadow-xl p-4 border-2 border-emerald-500">The Tech Blog</p>
+        <p class="rounded-lg bg-yellow-100 text-5xl text-emerald-700 font-extrabold drop-shadow-xl p-4 border-2 border-emerald-500">
+          {{#if dashboard}}
+            Your Dashboard
+          {{else}}
+            The Tech Blog
+          {{/if}}
+        </p>
       </div>
      
     </header>

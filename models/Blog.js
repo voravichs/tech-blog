@@ -15,8 +15,8 @@ Blog.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
+    content: {
+      type: DataTypes.TEXT("long"),
     },
     date_created: {
       type: DataTypes.DATE,

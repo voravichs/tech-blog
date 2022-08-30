@@ -1,26 +1,26 @@
 [
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "name": "NodeJS",
+    "content": "Moving away from front-end land, we start living in the backend."
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "name": "Object Oriented Programming",
+    "content": "A familiar paradigm applied to a different language."
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "name": "Express.js",
+    "content": "So this is a server. Thought it would be something... grander."
   },
   {
-    "name": "Music Near Me",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area."
+    "name": "mySQL",
+    "content": "Database, database, living in the database!"
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!"
+    "name": "Object-Relation Mapping",
+    "content": "Aw CRUD. I'm lost in the /routes folder."
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes."
+    "name": "Model View Controller",
+    "content": "Handlebar mustaches are cool."
   }
 ]

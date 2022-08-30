@@ -1,0 +1,24 @@
+{{#if user.blogs.length }}
+<div>
+  <h3 class="text-emerald-900 text-3xl mb-8">Your Blogs:</h3>
+
+  {{#each user.blogs as |blog| }}
+  <div class="ring-4 hover:ring-8 transition-all ring-emerald-600 rounded mb-8 blogs-list">
+    <a href="/blog/{{blog.id}}" class="bg-emerald-600 flex justify-between p-4 px-8 text-yellow-100">
+      <p class="font-semibold text-2xl">{{blog.name}}</p>
+      <p class="font-light">Created by {{blog.user.name}} on {{format_date blog.date_created}}</p>
+    </a>
+  </div>
+  {{/each}}
+
+</div>
+{{/if}}
+
+<div class="flex justify-center">
+  <button
+    class="fixed bottom-12 rounded-full bg-yellow-50 hover:bg-yellow-100 text-4xl text-emerald-600 font-bold drop-shadow-xl p-8 ring-2 ring-emerald-500 hover:ring transition-all create-blog-btn">
+    + New Post
+  </button>
+</div>
+
+<script src="./js/dashboard.js"></script>
