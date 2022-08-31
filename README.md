@@ -54,7 +54,7 @@ Thanks to https://github.com/eslint/eslint/issues/10137 for helping me implement
 
 ## Github Repository Link
 
-GitHub Repository: https://github.com/voravichs/employee-tracker
+GitHub Repository: https://github.com/voravichs/tech-blog
 
 
 
