@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
 
-  <!-- Link to Tailwind CSS-->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="stylesheet" href="/css/style.css">
@@ -16,7 +15,6 @@
   <div>
     <header class="bg-emerald-600 px-16 py-8 mb-12">
       <nav class="pb-8 flex justify-evenly text-3xl text-yellow-100">
-        <!-- Conditionally render login or logout links -->
         <a href="/" class="hover:font-bold transition-all"> Home </a>
         <a href="/dashboard" class="hover:font-bold transition-all"> Dashboard </a>
         {{#if logged_in}}
@@ -38,12 +36,10 @@
     </header>
 
     <main class="container mx-auto">
-      <!-- Render the sub layout -->
       {{{ body }}}
     </main>
   </div>
 
-  <!-- Render script for logged in users only -->
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
   {{/if}}

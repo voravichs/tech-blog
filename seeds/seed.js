@@ -26,7 +26,7 @@ const seedDatabase = async () => {
       ...comment,
       user_id: users[randUser].id,
       user_name: users[randUser].name,
-      blog_id: 1,
+      blog_id: Math.floor(Math.random() * 5)+1,
     });
   }
 

@@ -1,9 +1,30 @@
 <div class="ring-4 ring-emerald-600 rounded mb-20">
   <div class="bg-emerald-600 flex justify-between p-4 px-8 text-yellow-100">
-    <p class="font-semibold text-2xl">{{name}}</p>
-    <p class="font-light">Posted by {{user.name}} on {{format_date date_created}}</p>
+    <p class="font-semibold text-2xl">Edit Post</p>
   </div>
-  <div class="p-4 pl-8 text-emerald-900 text-xl">
-    {{content}}
+  <div class="p-8 pl-8 text-emerald-900 text-xl">
+    <form class="update-form flex flex-col">
+      <label for="update-name" class="text-emerald-900 text-2xl mb-2 mr-2">Title</label>
+      <textarea id="update-name" class="ring-2 rounded p-2 mb-8" cols="30" rows="1">{{name}}</textarea>
+      <label for="update-name" class="text-emerald-900 text-2xl mb-2 mr-2">Content</label>
+      <textarea id="update-content" class="ring-2 rounded p-2 mb-8" cols="30" rows="4">{{content}}</textarea>
+      <div class="mb-4">
+        <button
+          class="block w-1/2 text-yellow-100 text-2xl bg-emerald-600 hover:bg-emerald-700 transition-all ring-2 rounded-lg ring-emerald-500 p-4 mx-auto"
+          type="submit">
+          Update Post
+        </button>
+      </div>
+      <div class="mb-4">
+        <button
+          class="block w-1/2 text-yellow-100 text-2xl bg-emerald-600 hover:bg-emerald-700 transition-all ring-2 rounded-lg ring-emerald-500 p-4 mx-auto"
+          id="delete-btn">
+          Delete Post
+        </button>
+      </div>
+    </form>
+
   </div>
 </div>
+
+<script src="/js/update_delete.js"></script>
