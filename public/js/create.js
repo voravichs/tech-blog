@@ -4,8 +4,6 @@ const newBlogHandler = async (event) => {
   const name = document.querySelector("#blog-title").value.trim();
   const content = document.querySelector("#blog-content").value.trim();
 
-  console.log(name);
-  console.log(content);
   if (name && content) {
     const response = await fetch("/api/blogs", {
       method: "POST",
